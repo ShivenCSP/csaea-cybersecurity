@@ -21,3 +21,5 @@ for p in diff_pass:
     print(f"Pasword: {p}")
     print(f"Hash: {digest}", "\n")
 
+    
+

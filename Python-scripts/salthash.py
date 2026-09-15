@@ -17,8 +17,8 @@ salt_a = os.urandom(16)
 salt_b = os.urandom(16)
 
 print("\n Just salt:")
-print(f"User A salt: {salt_a}")
-print(f"User B salt: {salt_b}")
+print(f"User A salt: {salt_a.hex()}") # .hexdigest() = .hex()
+print(f"User B salt: {salt_b.hex()}")
 
 salthash_a = hashlib.sha256(salt_a + password).hexdigest()
 salthash_b = hashlib.sha256(salt_b + password).hexdigest()
